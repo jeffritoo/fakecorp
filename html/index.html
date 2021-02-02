@@ -10,7 +10,7 @@ h1 {
     text-align: center;
 }
 
-h2 {
+h2, h4 {
   font-style: italic;
 }
 
@@ -29,13 +29,30 @@ h3 {
 
 img {
   display: block;
-  max-width:600px;
-  max-height:600px;
+  max-width: 400px;
+  max-height: 400px;
   width: auto;
   height: auto;
 }
 
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
 
+table, th, td {
+  border: 1px solid black;
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul{
+  display: table;
+  margin: 0 auto;
+}
 
 </style>
 
@@ -65,7 +82,7 @@ img {
             </div>
         </div>
 
-    <table style="width:50%">
+    <table style="width:50%" class='center'>
             <tr>
               <th>Artist</th>
               <th>Location</th>
@@ -93,7 +110,7 @@ img {
               </tr>
               <tr>
                 <td>Jose Ramirez</td>
-                <td>1147 Palmetto St, Los Angeles, CA 90013/td>
+                <td>1147 Palmetto St, Los Angeles, CA 90013</td>
                 <td>50</td>
               </tr>
               <tr>
@@ -102,6 +119,16 @@ img {
                 <td>51</td>
               </tr>
     </table>
+
+    <ul>
+      <h4>Include the following with submissions:</h4>
+      <li>Image</li>
+      <li>Name</li>
+      <li>Art Address</li>
+    </ul>
+
+
+    
           
 
     <!--   
