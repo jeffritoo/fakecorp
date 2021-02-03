@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counterfit Corp. - Art Forum Log-in</title>
+</head>
+<body>
+    <a href="indexnocss.html"> Link to Intro</a> |
+    <a href="index.html"> Link to CSS Page</a>
+    <h2>Guerrilla Art Forum</h2>
+
+    <h4> Art Lover Log-in:</h4>
+    <FORM ACTION="/actionpage.py">
+    E-mail: <INPUT TYPE="email" NAME="email"><br>
+    Password: <INPUT TYPE="password" NAME="password"><br>
+    <br>    
+    <table>
+        <tr>
+            <td valign="top">
+              User Type:<br>
+              <select name="userType">
+                <option value="contributer">Contributer</option>
+                <option value="artist">Artist</option>
+                <option value="mod">Moderator</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+        </tr> 
+    </table>    
+    <br>
+    <table>
+        <tr>
+            <td valign="top">
+                Log-in Options:<br>
+                <br>
+                <input type="checkbox" name="email" value="email"> Forgot E-mail?
+                <input type="checkbox" name="password" value="password"> Forgot Password?
+                <input type="checkbox" name="newuser" value="newuser"> New User 
+            </td>          
+        </tr>   
+    </table>
+    <br>
+    <INPUT TYPE="submit" VALUE="Log-in">
+    </FORM>
+
+    <h4> Submit New Artwork:</h4>
+    
+    <FORM ACTION="/actionpage.py">
+        Artist Name: <INPUT TYPE="text" NAME="artist"><br>
+        Location (Address): <INPUT TYPE="text" NAME="address"><br>
+        Date: <INPUT TYPE="date" NAME="date"><br>
+        <br>        
+        <label for="img">Select image:</label>
+        <input type="file" id="img" name="img" accept="image/*">
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td valign="top">
+                    Revising a submission?<br>
+                    <br>
+                    <input type="radio" name="betterPic" value="betterPic"> Better Picture
+                    <input type="radio" name="dne" value="dne"> Mural No Longer Exists
+                    <input type="radio" name="newaddress" value="newaddress"> New Location (Address)
+                    <input type="radio" name="newartist" value="newartist"> New Artist
+                </td>          
+            </tr>
+        </table>
+        <br>
+        <INPUT TYPE="submit" VALUE="Submit">
+    </FORM>
+    
+</body>
+</html>
